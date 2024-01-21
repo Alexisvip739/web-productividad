@@ -57,7 +57,7 @@ La aplicación está alojada en [Netlify](https://www.netlify.com/), donde fue m
 2. **Alogamiento de la API**
   La api que se utilizo para la poder obtener la informacion fue creada en node js, con el objetivo de automatizar el proceso y no hacer a la aplicacion mucho mas pesada con informacion estatica. `
   ```bash
-  url de la api: https://productask-api-com.onrender.com/api/1
+  url de la api: https://api-productividad-task-production-8231.up.railway.app/api/
   alojada en servidores de: https://render.com
   ```
   Tambien se puede ver el codigo de la api en mi repositorio de github:https://github.com/Alexisvip739/api-productividad-task
