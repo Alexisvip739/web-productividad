@@ -1,0 +1,65 @@
+.conteiner-description {
+  width: 90%;
+  margin: auto;
+}
+
+.description-task-container {
+  width: 100%;
+  display: block;
+  text-align: start;
+  font-size: 20px;
+  word-wrap: break-word;
+  /* Permite que las palabras largas se envuelvan en múltiples líneas */
+}
+
+
+.title-task-container {
+  align-self: flex-start;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.play,
+.stop,
+.reset {
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+
+}
+
+.play:hover,
+.stop:hover,
+.reset:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-times {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.completed {
+  background: var(--color-button-edit-add);
+  padding: 10px;
+  font-size: var(--size-text-h2);
+  font-weight: var(--font-weight-bolder);
+  min-width: 180px;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-radius: var(--border-radius-inputs);
+  cursor: pointer;
+
+}

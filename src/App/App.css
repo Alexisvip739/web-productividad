@@ -1,0 +1,53 @@
+/**
+Estilos base que se utilizan en toda la aplicacion, los estilos base nos ayudan a  darles nombre a las variables
+y sea mucho mas entendible el css
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --border-radius-containers: 10px;
+  --color-navbar-1: #547FEF;
+  --color-random-1: #AEDFF7;
+  --color-random-2: #FFD1DC;
+  --color-random-3: #B4F8C8;
+  --color-random-4: #E6E6FA;
+  --border-radius-inputs: 10px;
+  --font-weight-bolder: bolder;
+  --size-text-h1: 20px;
+  --size-text-h2: 16px;
+  --size-text-p: 12px;
+  --container-warrning: #FF577F;
+  --color-button-edit-add: #13FF8E;
+  --background-inputs: #E9ECF5;
+  --background-navbar: #547FEF;
+  --strong-text-title: #3D90A3;
+  --backgound-button-handleTask: #547FEF;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-weight-bolder);
+  overflow-x: hidden;
+}
+
+/*Herramienta para personalizar la barra de scroll*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--color-random-3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9cb2ea;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9cb2ea;
+}

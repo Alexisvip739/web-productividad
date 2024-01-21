@@ -1,0 +1,83 @@
+/* FilterTime.css */
+
+.modal-generate {
+  display: flex;
+  width: 60%;
+  height: 400px;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: absolute;
+
+}
+
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.icon-close-container {
+  cursor: pointer;
+}
+
+
+.filter-modal {
+
+  position: absolute;
+  left: calc(100% + -140px);
+  top: 45px;
+  width: 210px;
+  z-index: 1;
+}
+
+.modal-content-filter {
+  position: fixed;
+  max-width: 8%;
+  min-width: 120px;
+  background-color: #faf8f8;
+  height: 120px;
+  display: flex;
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal-content-filter p {
+  cursor: pointer;
+  font-size: 13px;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+}
+
+
+@media screen and (min-width: 320px) {
+
+
+  .filter-modal {
+    width: 150px;
+    left: auto;
+
+  }
+}
+
+/* FilterMenu.css estilos*/

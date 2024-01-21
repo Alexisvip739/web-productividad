@@ -1,0 +1,61 @@
+/* Estilo específico para el contenido del modal de eliminación */
+.modal-content.modal-delete {
+  background-color: var(--container-warrning);
+  /* Color de fondo del modal */
+  color: white;
+  /* Color del texto */
+  max-width: 400px;
+  /* Ancho máximo del modal */
+}
+
+/* Estilo para el contenedor de los botones de confirmación */
+.buttons-delete {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Espacio entre elementos */
+}
+
+/* Estilo para el botón de confirmación */
+.confirm {
+  background-color: var(--color-button-edit-add);
+  /* Color de fondo del botón */
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  /* Borde redondeado */
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-weight-bolder);
+  /* Grosor del texto */
+  transition: 0.4s all;
+  /* Transición suave */
+}
+
+/* Efecto de escala al pasar el mouse sobre el botón de confirmación */
+.confirm:hover {
+  transform: scale(1.2);
+  transition: 0.4s all;
+}
+
+/* Estilo para el botón de cancelar */
+.no-confirm {
+  background-color: rgb(247, 29, 29);
+  /* Color de fondo del botón */
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  /* Borde redondeado */
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-weight-bolder);
+  /* Grosor del texto */
+  transition: 0.4s all;
+  /* Transición suave */
+}
+
+/* Efecto de escala al pasar el mouse sobre el botón de cancelar */
+.no-confirm:hover {
+  transform: scale(1.2);
+  transition: 0.4s all;
+}

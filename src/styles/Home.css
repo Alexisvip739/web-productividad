@@ -1,0 +1,285 @@
+/* EL COMPONENTE HISTORY NO TIENE CSS POR QUE EL ESTILO ES MUY SIMILAR A LAS CARDS DE EL HOME, DECIDI MEJOR RECILCARLAS DESDE EL HOME EN VEZ DE CREARLAS DE NUEVO*/
+
+
+/* Estilos para el contenedor principal de tareas en la página principal */
+.container-tasks-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 170px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+/* Estilos para el título y filtros en la página principal */
+.title-home {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para el icono de filtro */
+.filter-icon {
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s all;
+}
+
+/* Estilos para el contenedor de filtros */
+.filter-tasks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilos para el icono de filtro al pasar el ratón por encima */
+.filter-icon:hover {
+  background-color: #05ffd1;
+  padding: 10px;
+  border-radius: 100%;
+  transition: 0.2s all;
+}
+
+.filter-container {
+  position: relative;
+}
+
+.filter-modal {
+  position: absolute;
+  top: calc(100% + 10px);
+  /* Puedes ajustar la separación vertical según tus necesidades */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Otros estilos según sea necesario */
+}
+
+/* Estilos para el contenedor de título */
+.title {
+  font-weight: var(--font-weight-bolder);
+  font-size: var(--size-text-h1);
+  text-align: center;
+}
+
+/* Estilos para el elemento "strong" */
+strong {
+  color: var(--strong-text-title);
+}
+
+/* Estilos para los contenedores de tareas */
+.containers-tasks {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Estilos para un contenedor individual de tarea */
+.container-task {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 400px;
+  min-width: 320px;
+  transition: 0.4s all;
+}
+
+/* Estilos para el contenedor de título e ítems de la tarea */
+.container-title-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilos para el título de la tarea */
+.title_task {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+/* Estilos para los ítems de la tarea */
+.items-tasks {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los botones de edición y eliminación */
+.edit-task,
+.delete-task {
+  font-size: var(--size-text-h1);
+  padding: 8px;
+  font-weight: var(--font-weight-bolder);
+  position: relative;
+}
+
+/* Estilos específicos para el botón de eliminación */
+.delete-task {
+  color: #FF0000;
+}
+
+/* Estilos al pasar el ratón por encima del contenedor de tarea */
+.container-task:hover {
+  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.2);
+  transition: 0.4s all;
+}
+
+/* Estilos para asignar colores a cada tarea */
+.task-color-1 {
+  background-color: var(--color-navbar-1);
+}
+
+.task-color-2 {
+  background-color: var(--color-random-1);
+}
+
+.task-color-3 {
+  background-color: var(--color-random-2);
+}
+
+.task-color-4 {
+  background-color: var(--color-random-3);
+}
+
+.task-color-5 {
+  background-color: var(--color-random-4);
+}
+
+/* Estilos para el título cuando no se encuentran tareas */
+.title-not-found {
+  font-weight: var(--font-weight-bolder);
+  text-align: center;
+}
+
+/* Estilos para el botón de agregar tarea */
+.add-button {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: none;
+  position: fixed;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  right: calc(20px + env(safe-area-inset-right));
+  color: white;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--backgound-button-handleTask);
+  transition: 0.4s all;
+}
+
+/* Estilos al pasar el ratón por encima del botón de agregar tarea */
+.add-button:hover {
+  box-shadow: 4px 4px 10px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.4s all;
+}
+
+/* Estilos para el contenedor de tiempo finalizado de la tarea */
+.container-task-time-finished {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Estilos para el enlace de ordenar */
+.p-ordenar {
+  background-color: var(--color-random-1);
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+/* Estilos al pasar el ratón por encima del enlace de ordenar */
+.p-ordenar:hover {
+  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.155);
+  transition: 0.2s all;
+}
+
+/* Estilos para el contenedor del temporizador */
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+}
+
+/* Estilos para el esqueleto de carga */
+.loading-skeleton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Personalización de la animación de carga */
+@keyframes loading {
+  0% {
+    background-position: -200%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+/* Estilos para la animación de carga */
+.loading-skeleton::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  position: absolute;
+}
+
+/* Estilos para el texto de carga */
+.text-loading {
+  position: relative;
+}
+
+
+@keyframes rotateDots {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Resto de tu CSS existente */
+
+.loading-dots {
+  display: inline-block;
+  animation: rotateDots 1.5s infinite linear; /* Ajusta la duración según tu preferencia */
+}
